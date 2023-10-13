@@ -3,8 +3,6 @@ import { Inter } from "next/font/google";
 import Navbar from "@/components/Navbar";
 import Providers from "../providers/Providers.jsx";
 
-const inter = Inter({ subsets: ["latin"] });
-
 export const metadata = {
     title: "Stamina Ads",
     description: "Donde influencers y marcas se conectan",
@@ -13,11 +11,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
     return (
         <html lang="en">
-            <body className={inter.className}>
-                <Providers>
-                    <Navbar />
+            <body>
+                <Navbar />
+                <div className="flex flex-col items-center p-20">
                     {children}
-                </Providers>
+                </div>
             </body>
         </html>
     );

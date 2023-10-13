@@ -6,11 +6,10 @@ import Link from 'next/link';
 
 const LoginButton = () => {
   return (
-
-  
-  <button onClick={()=> signIn()} className="bg-sky-400  px-3 py-1 rounded">Ingresar</button>
-  
-  )
+      <Link href="/login" className="bg-blue-900 text-white  px-3 py-1 rounded">
+          Ingresar
+      </Link>
+  );
 }
 
 export default LoginButton
