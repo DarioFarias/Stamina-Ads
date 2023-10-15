@@ -13,7 +13,7 @@ export default function RootLayout({ children }) {
         <html lang="en">
             <body>
                 <Navbar />
-                <div className="flex flex-col items-center p-20">
+                <div className="grow flex flex-col items-center p-4 md:p-8 lg:p-16">
                     {children}
                 </div>
             </body>
