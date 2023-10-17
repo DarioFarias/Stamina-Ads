@@ -3,5 +3,17 @@
 @tailwind utilities;
 
 body {
-  @apply flex flex-col min-h-screen bg-gradient-to-b from-blue-600 to-blue-200
+    @apply flex flex-col min-h-screen bg-gradient-to-b from-blue-600 to-blue-200 min-w-[350px];
+}
+
+.centralSection {
+    @apply flex grow bg-white rounded w-11/12 max-w-[480px] self-center my-12 p-4;
+}
+
+.blueButton {
+    @apply bg-blue-900 hover:bg-blue-500 hover:text-blue-900 border-2 border-blue-900 text-white px-3 py-1 rounded text-center transition duration-150;
+}
+
+.blackButton {
+    @apply bg-black hover:bg-gray-600 hover:text-white text-white border-2 border-black px-3 py-1 rounded text-center transition duration-150;
 }
